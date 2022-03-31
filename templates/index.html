@@ -15,13 +15,12 @@
  <div class="login">
 	<h1>Which Fish is in the Fish Market?</h1>
   
-
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-      <input type="text" name="weight" placeholder="weight" required="required" />
-      <input type="text" name="length-1" placeholder="vertical length in cm" required="required" />
-		  <input type="text" name="length-2" placeholder="diagonal length in cm" required="required" />
-      <input type="text" name="length-3" placeholder="cross length in cm" required="required" />
+      <input type="text" name="weight" placeholder="weight of fish in grams" required="required" />
+      <input type="text" name="body height" placeholder="vertical length in cm" required="required" />
+		  <input type="text" name="total length" placeholder="diagonal length in cm" required="required" />
+      <input type="text" name="diagnol length" placeholder="cross length in cm" required="required" />
       <input type="text" name="height" placeholder="height in cm" required="required" />
       <input type="text" name="width" placeholder="diagonal width in cm" required="required" />
 
