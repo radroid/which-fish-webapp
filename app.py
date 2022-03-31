@@ -18,7 +18,7 @@ def predict():
 
     output = prediction[0]
 
-    return render_template('index.html', prediction_text=f'The Fish type is: {output}')
+    return render_template('index.html', prediction_text=f'Fish type: {output}')
 
 @app.route('/results',methods=['POST'])
 def results():
