@@ -1,6 +1,5 @@
 import numpy as np
 from flask import Flask, request, jsonify, render_template
-from waitress import serve
 import pickle
 
 app = Flask(__name__)
@@ -31,4 +30,4 @@ def results():
     return jsonify(output)
 
 if __name__ == "__main__":
-    serve(app, host="0.0.0.0")
+    app.run(host="0.0.0.0")
